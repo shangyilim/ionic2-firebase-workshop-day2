@@ -6,6 +6,15 @@ export class Reminder{
     endTime: string
     hasDuration: boolean
     avatar: string
+    key: string
+
+    getDateDate(): Date{
+        return new Date(this.date);
+    }
+
+    getDateTime(): Date{
+        return new Date(this.date+" "+this.time);
+    }
 
     getTotalDays(): number {
 
